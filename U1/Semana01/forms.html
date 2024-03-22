@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h3>Formularios</h3>
+    <hr>
+    <form >
+        <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required/>
+        </div>
+
+        <div>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" placeholder="Ingrese Apellido"  required/>
+        </div>
+
+        <!-- div>label+input(+tab) -->
+        <div>
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" value="profe@gmail.com"  required>
+        </div>
+
+        <div>
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" placeholder="Ingrese su contraseña" required>
+        </div>
+
+        <div>
+            <label for="fe-nac">Fecha Nacimiento:</label><br>
+            <input type="date" id="fe-nac" min="2022-01-01"  max="2024-12-31" required>
+        </div>
+
+        <div>
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" min="0"  max="120" required>
+        </div>
+
+        <!-- div>label+select>option*3 -->
+        <div>
+            <label for="carrera">Carrera:</label><br>
+            <select name="" id="carrera">
+                <option selected>--Seleccione--</option>
+                <option value="info" >T.U. en Informática</option>
+                <option value="ele">T.U. en Electrónica</option>
+                <option value="electri">T.U. en Electricidad</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Jornada:</label><br>
+            <input type="radio" name="jornada" checked id="diurno" value="d"/><label for="diurno">Diurno</label>
+            <input type="radio" name="jornada" id="vespertino" value="v"/><label for="vespertino">Vespertino</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="gratuidad">
+            <label for="gratuidad">Tiene Gratuidad</label>
+        </div>
+
+        <div>
+            <label for="comentarios">Comentario:</label><br>
+            <textarea id="comentarios" ></textarea>
+        </div>
+
+
+        <div>
+            <button type="reset">Restablecer</button>
+            <button type="submit">Enviar</button>
+        </div>
+
+    </form>
+</body>
+</html>
